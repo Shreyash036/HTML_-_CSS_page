@@ -1,0 +1,193 @@
+<html>
+<head>
+    <style>
+        body {
+            background: url('p2.jpg');
+		background-size: cover; /* Adjusts the background image size to cover the entire element */
+        background-position: center;
+        }
+	nav 
+	{
+  		min-width: 600px;
+  	    	display: flex;
+  	    	align-items: right ;
+  		justify-content: space-around;
+  		margin: auto;
+		
+		padding : 20px;
+	}
+	a
+	{
+ 		position: relative;
+  		text-decoration: none;
+  		font-family: "Poppins", sans-serif;
+  		color: #a0a0a0;
+  		font-size: 18px;
+  		letter-spacing: 0.5px;
+  		padding: 0 10px;
+	}
+	a:before,
+	a:after
+	{
+  		content: "";
+  		position: absolute;
+  		height: 3px;
+  		width: 0;
+  		background-color: #18f08b;
+  		transition: 0.5s;
+	}
+	a:after 
+	{
+  		left: 0;
+  		bottom: -10px;	
+	}
+	a:before 
+	{
+  		right: 0;
+  		top: -10px;
+	}
+	a:hover 
+	{
+  		color: #ffffff;
+	}
+	a:hover:after,
+	a:hover:before 
+	{
+  		width: 100%;
+	}
+	span
+	{
+		color : aqua;
+	}
+	p
+	{
+		color : white;
+		font-family : cursive;
+		font-size : 20;
+	}
+	
+	.hello
+	{
+		color : white;
+		top : 40%;
+		position : absolute;
+		font-size : 65px;
+	}
+	
+	.about
+	{
+		color : white;
+		top : 50%;
+		position : absolute;
+		font-size : 40px;
+	}
+	.moreabout
+	{
+		top : 60%;
+		position : absolute ;
+		color : white;
+	}
+	img
+	{
+		width : 30%;
+		height : 30%;
+	}
+	
+	button
+	{
+			
+		display : flex;
+		align-items : center;
+		padding : 10px 20px;
+		border : 0;
+		outline : 0;
+		border-radius : 5px;
+		background :rgb(115, 195, 253);
+		color : #fff;
+		font-weight : 500;
+		cursor : pointer;
+	}
+	.content
+	{
+		margin-top :5%;
+		color : #fff;
+		max-width : 620px;
+		left : 15%;
+		position : absolute;
+		
+	}
+	.content h1
+	{
+		font-size : 70;
+		font-weight : 600;
+		line-weight : 65px;
+		margin-bottom : 25px;
+		font-family : cursive;
+	}
+	.content form
+	{
+		display : flex;
+		align-items : center;
+		background : #fff;
+		border-radius : 5px;
+		padding : 10px;
+		margin-top : 10%;
+		left : 20px;
+		
+	}
+	.content form input 
+	{
+		border: 0;
+		outline  : 0;
+		width : 100%;
+		font-size : 16px;
+		padding-left : 20px;
+		
+	}
+	
+    </style>
+</head>
+<body>
+    <nav>
+      
+	<a href="#">
+		<span class="icon">
+			<ion-icon name="home-outline">Home</ion-icon>
+		</span>
+		<span class="text">Home</span>
+	</a>
+	 <a href="#">
+		<span class="icon">
+			<ion-icon name="person-outline"></ion-icon>
+		</span>
+		<span class="text">Profile</span>
+	</a>
+	 <a href="#">
+		<span class="icon">
+			<ion-icon name="call-outline"></ion-icon>
+		</span>
+		<span class="text">Contact</span>
+	</a>
+	
+    </nav>
+
+			
+		
+	<div class="content">
+		<h1>Welcome to my world </h1>
+		<p>Hey , Shreyash here ! <br>&nbsp; &nbsp; &nbsp In every line of HTML, I find my voice,
+								In every stroke of CSS, I rejoice.
+								Together they form the essence of my art,
+								HTML and CSS, the heart. I found my soul reflection in #CSS</p>
+		
+        <form>
+            <label for="inputField"></label>
+            <input type="text" id="inputField" name="inputField" placeholder="Enter name ">
+            <button type="submit">Submit</button>
+        </form>
+	</div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
